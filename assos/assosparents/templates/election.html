@@ -24,6 +24,7 @@
         <strong>Vote pour identifier le président de l'association</strong>
       </h4>
       {% for result in results %}
+      <div class="p-2">
       <form action="" method="post">
         {% csrf_token %}
         <input type="hidden" name="target" value="{{result.0.username}}" />
@@ -37,6 +38,7 @@
           </span>
         </button>
       </form>
+    </div>
       {% endfor %}
     </div>
     {% endif %}
