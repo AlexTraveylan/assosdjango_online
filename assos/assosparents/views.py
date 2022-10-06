@@ -793,8 +793,8 @@ def setting_asso(request, id):
             #1 : message bouton
             #2 : couleur bouton
         for member in members:
-            #Problematique si le president change de nom sur son profil ...
-            if member.last_name in asso.president:
+            president = Role.objects.get(asso=asso, role=4)
+            if member == president.user:
                 pass
             else:
                 check_role = Role.objects.get(asso=asso, user=member)
