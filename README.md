@@ -8,7 +8,7 @@ git push -u origin main
 
 Ne pas oublié de creer la base de donnée avec python manage.py migrate
 
-Ne pas oublié d'installer avec pip install le contenu du fichier requirements.txt
+Ne pas oublié d'installer avec pip install le contenu du fichier requirements.txt (pip install -r requirements.txt)
 
 Il y a un dossier .env à rajouter dans le dossier /assos/assos/ dans lequel se trouve settings.py
 
