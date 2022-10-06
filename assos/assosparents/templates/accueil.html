@@ -64,7 +64,21 @@
         Ville : {{asso.town}} <br />
         {% if asso.verified == True %} C'est une association validée et vérifiée
         plienement opérationnelle {% else %} Cette association n'a pas encore
-        été vérifiée par nos service {% endif %}
+        été vérifiée par nos service, pour utiliser toutes les fonctionnalité du
+        site vous aller devoir nous indiquer qui est le président de
+        l'association <br />
+        Pour cela, vous devez être au minimum trois membres à avoir rejoint
+        l'association dans l'onglet
+        <a class="text-4" href="{% url 'bemember' asso.id %}">devenir membre</a>
+        puis voter dans l'onglet
+        <a class="text-4" href="{% url 'election' asso.id %}"> Election</a> pour
+        valider le nom du président de l'association. <br />
+        Une fois le nombre suffisant de vote requis, vous pourrez terminer les
+        elections, le president possedera les droits pour gerer le site de
+        l'association et aussi de transmettre des droits aux autres membres.
+        <br />
+        Une fois le président élu, le site de votre association sera validé et
+        totalement opérationnel. {% endif %}
       </p>
     </div>
   </div>
