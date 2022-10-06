@@ -43,15 +43,14 @@
     <div class="col-12 text-center py-3">
       <h4 class="text-light"><strong>{{ data.0.title }}</strong></h4>
       <p class="text-light">{{ data.0.text}}</p>
+      {% if data.0.file != '' %}
+      <p><a href="{{ data.0.file.url }}">Fichier</a></p>
+      {% endif %}
     </div>
 
-    {% if data.0.file != '' %}
-    <div class="col-12 col-md-6 text-center">
-      <a href="{{ data.0.file.url }}">Fichier</a>
-    </div>
-    {% endif %} {% if data.0.image != '' %}
-    <div class="col-12 col-md-6 text-center">
-      <img src="{{ data.0.image.url }}" />
+    {% if data.0.image != '' %}
+    <div class="col-12 text-center">
+      <img width="375px" src="{{ data.0.image.url }}" />
     </div>
     {% endif %}
 
