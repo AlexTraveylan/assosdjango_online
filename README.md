@@ -10,7 +10,8 @@ git push -u origin main
 
 #Il y a un dossier .env à rajouter dans le dossier /assos dans lequel se trouve settings.py
 #Il contient :
-#- SECRET_KEY='****\*\*\*\*****\*\*****\*\*\*\*****\*\*\*****\*\*\*\*****\*\*****\*\*\*\*****' (secret ?)
+
+#- SECRET_KEY='\***\*\*\*\*\*\*\***\*\*\***\*\*\*\*\*\*\***\*\*\*\***\*\*\*\*\*\*\***\*\*\***\*\*\*\*\*\*\***' (secret ?)
 
 #- DEBUG= True (or False)
 
