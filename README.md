@@ -1,12 +1,8 @@
 "# AssosDjango"
 
-git remote add origin https://github.com/AlexTraveylan/AssosDjango.git
-git branch -M main
-git push -u origin main
-
 ---
 
-Ne pas oublié de creer la base de donnée avec python manage.py migrate
+Ne pas oublier de creer la base de donnée avec python manage.py migrate
 
 Ne pas oublié d'installer avec pip install le contenu du fichier requirements.txt (pip install -r requirements.txt)
 
